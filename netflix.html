@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Netflix</title>
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/net.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0bc203b0aa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <nav>
+        <div class="nav">
+            <div class="nav1">
+                <a href=""> <img src="./img/netflix.png" alt=""></a>
+                <a href="netflix.html" >Home </a>
+                <a href="tvshow.html" onclick="tvshow()">TV Shows</a>
+                <a href="#">Movies</a>
+                <a href="#">New & Popular</a>
+                <a href="#">My List</a>
+                <a href="#">Browse by language</a>
+            </div>
+            <div class="nav2">
+                <input type="text" placeholder="search" class="search" id="srch"> 
+                <i class="fa-solid fa-xmark" id="cr" style="color: #000000;"></i>             
+                <i class="fa-solid fa-magnifying-glass" id="sr" style="color: #ffffff;" ></i>
+                <a href="">children</a>
+                <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                <a href="">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <video src="./img/Riverdale： Official Trailer.mp4" autoplay muted> </video>
+    <div class="name">
+        <img src="./img/riverdale.png" alt="">
+        <br>
+        <p>
+            While navigating the troubled waters of romance, school and family, Archie and his gang become entangled
+            in dark Riverdale mysteries.
+        </p>
+        <button type="button" onclick="get()">
+            <i class="fa-solid fa-play" style="color: #000000;"></i> <b>Play</b>
+        </button>
+        <a href=""><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i><b>More info</b></a>
+    </div>
+    <div class="main">
+        <div class="mainbody">
+            <h3> Trending Now</h3>
+            <br>
+            <div class="im" id="im1">          
+               <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>For you</h3>
+            <br>
+            <div class="im" id="im2">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>Because you watched fairy tale</h3>
+            <br>
+            <div class="im" id="im3">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>Latest</h3>
+            <br>
+            <div class="im" id="im4">
+                <img src="" alt=""><h1>title</h1>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>Because you watched animal</h3>
+            <br>
+            <div class="im" id="im5">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>Because you watched pookie bear</h3>
+            <br>
+            <div class="im" id="im6">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>Because you watch anime</h3>
+            <br>
+            <div class="im" id="im7">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>Last year</h3>
+            <br>
+            <div class="im" id="im8">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="mainbody">
+            <h3>this year</h3>
+            <br>
+            <div class="im" id="im9">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="container">
+          <img src="./img/netflix.png" alt="Netflix Logo" class="footer-logo">
+          <p>&copy; 2024 Netflix, Inc. | <a href="#">Terms of Use</a> | <a href="#">Privacy Statement</a> | <a href="#">Help</a></p>
+          <div class="footer-links">
+            <div>
+            <a href="#">Account</a>
+            <a href="#">Media Center</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Jobs</a>
+            <a href="#">Redeem Gift Cards</a>
+           </div>
+           <div>
+            <a href="#">Buy Gift Cards</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+         <div>
+        <a href="#">Corporate Information</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Speed Test</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+          </div>
+        </div>
+      </div>
+</footer>
+<script src="netflix.js"></script>
+</body>
+
+</html>
