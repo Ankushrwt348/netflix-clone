@@ -1,28 +1,28 @@
 const sr = document.querySelector('#sr');
 const cr = document.querySelector('#cr');
-// for (i = 0; i <= 9; i++) {
-//     const im = document.querySelector(`#im${i}`);
-//     const url = `https://moviesverse1.p.rapidapi.com/movies/category/latest-movies/${i}`;
-//     const options = {
-//         method: 'GET',
-//         headers: {
-//             'X-RapidAPI-Key': 'b004f391b9msh8c00e9ba2a964c5p1f052ajsn468e96b6733c',
-//             'X-RapidAPI-Host': 'moviesverse1.p.rapidapi.com'
-//         }
-//     };
-//     fetch(url, options)
-//         .then(response => { return response.json() })
-//         .then(apiResponse => {
-//             const data = apiResponse.movies;
-//             data.forEach((data, index) => {
-//                 im.children[index].src = `${data.img}`;
-//             });
-//         })
-//         .catch(error => {
-//             console.error('Error:', error);
-//         });
+for (i = 0; i <= 9; i++) {
+    const im = document.querySelector(`#im${i}`);
+    const url = `https://moviesverse1.p.rapidapi.com/movies/category/latest-movies/${i}`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'b004f391b9msh8c00e9ba2a964c5p1f052ajsn468e96b6733c',
+            'X-RapidAPI-Host': 'moviesverse1.p.rapidapi.com'
+        }
+    };
+    fetch(url, options)
+        .then(response => { return response.json() })
+        .then(apiResponse => {
+            const data = apiResponse.movies;
+            data.forEach((data, index) => {
+                im.children[index].src = `${data.img}`;
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 
-// }
+}
 function get() {
     document.location.href = 'https://www.youtube.com/watch?v=jMlJ7FTk35c&ab_channel=IGN';
 }
@@ -35,9 +35,6 @@ cr.addEventListener('click', () => {
 
 sr.addEventListener("click", (data) => {
     const value1 = document.getElementById('srch').value;
-    
-    // console.log(value1)
-    // const value = srch.value;
     srch.style.display = 'block';
     cr.style.display = 'block';
     sr.style.color = 'black';
