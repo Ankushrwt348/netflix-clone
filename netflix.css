@@ -8,6 +8,40 @@ body{
     width: 100%;
 }
 
+
+.result{
+     height: 60vh;
+      width: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+}
+.result img{
+  border-radius: 20px;
+  object-fit: contain;
+ height: auto;
+}
+.result h3{
+  text-transform: capitalize;
+}
+.result a{
+  text-decoration: none;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+#resultsContainer{
+  padding: 5rem;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+
 .nav,.nav1,.nav2{
     height: 65px;
     background-color: rgba(0, 0, 0, 0);
