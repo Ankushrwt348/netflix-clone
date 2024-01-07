@@ -40,8 +40,6 @@ body{
   flex-direction: column;
   height: 70vh;
 }
-
-
 .nav,.nav1,.nav2{
     height: 65px;
     background-color: rgba(0, 0, 0, 0);
@@ -168,6 +166,7 @@ im h1{
     transform: scale(1.1);
     transition: all 0.7s ease;
     cursor: pointer;
+    opacity: 99;
 }
 .mainbody{
     position: relative;
