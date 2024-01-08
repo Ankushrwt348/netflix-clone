@@ -60,7 +60,7 @@ body{
     display: none;
 }
 
-.nav a,.nav span,.nav svg{
+.nav p,.nav span,.nav svg{
    text-decoration: none;
    display: flex;
    padding: 10px;
