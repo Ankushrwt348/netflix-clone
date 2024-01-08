@@ -20,6 +20,7 @@ for (i = 0; i <= 9; i++) {
                 if (imgTag && data[index]) {
                     imgTag.src = `${data[index].img}`;
                     aTag.href=`${data[index].link}`;
+                    aTag.target="_blank";
                 }
             });
             data.forEach((data, index) => {
