@@ -14,9 +14,17 @@ for (i = 0; i <= 9; i++) {
         .then(response => { return response.json() })
         .then(apiResponse => {
             const data = apiResponse.movies;
+            const aTags = im.querySelectorAll('a');
+            aTags.forEach((aTag, index) => { 
+                const imgTag = aTag.querySelector('img');
+                if (imgTag && data[index]) {
+                    imgTag.src = `${data[index].img}`;
+                    aTag.href=`${data[index].link}`;
+                }
+            });
             data.forEach((data, index) => {
                 im.children[index].src = `${data.img}`;
-            });
+            })
         })
         .catch(error => {
             console.error('Error:', error);
