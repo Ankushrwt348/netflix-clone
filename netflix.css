@@ -7,8 +7,6 @@ body{
     background-color: black;
     width: 100%;
 }
-
-
 .result{
      height: 60vh;
       width: 30vh;
@@ -172,9 +170,13 @@ span:hover{
 .im img{
   height: 35vh;
   width: 25vb;
+  object-fit: contain;
+  background-color: black;
    margin-left: 10px;
   position: relative;
 }
+
+
 
 .im img:hover{
     transform: scale(1.1);
