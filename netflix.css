@@ -40,7 +40,7 @@ body{
   flex-direction: column;
   height: 70vh;
 }
-.nav,.nav1,.nav2{
+.nav,#nav1,#nav2{
     height: 65px;
     background-color: rgba(0, 0, 0, 0);
     display: flex; 
@@ -64,17 +64,17 @@ body{
    text-decoration: none;
    display: flex;
    padding: 10px;
-   color: white;
+   color: rgb(229, 228, 228);
    align-items: center;
-   font-weight: 300;
+   font-weight: 200;
 }
 
-.nav2{
+#nav2{
  right: 50px;
  justify-content: center;
  align-items: center;
 }
-.nav2 i{
+#nav2 i{
     font-size: 20px;
     margin-right: 8px;
 }
@@ -82,7 +82,14 @@ body{
   height: 80px;
   padding-left: 20px;
 }
+#nav1 p{
+ color: rgb(216, 213, 213);
+ transition: transform  .1s ease-in;
+}
+#nav1 p:hover{
+   transform: scale(0.95);
 
+}
 #p{
   margin: 6rem;
   color: white;
@@ -90,7 +97,9 @@ body{
 }
 video{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    position: relative;
+    top:-20px;
 }
 
 span:hover{
@@ -98,7 +107,7 @@ span:hover{
 }
 .name{
     position: absolute;
-    top: 200px;   
+    top: 120px;   
 }
 .name img{
     width: 600px;
@@ -135,46 +144,45 @@ span:hover{
     font-weight: 300;
     font-size:1.4em;
 }
+.mainbody{
+  position: relative;
+  width: 100%;
+  top: -200px;
+  margin-bottom: 30px;
+}
 .mainbody h3{
     font-size: larger;
     color: azure;
-    margin-left: 20px;
+    margin-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.main{  
- margin-left: 15px;;
+.main{
+ margin-left: 25px;
+ margin-bottom: -100px;
 }
 .im {
     overflow-y: scroll;
     display: flex;
-    padding: 20px;
+    padding: 10px;
 
   }
 .im::-webkit-scrollbar {
     display: none; 
   }
-
 .im img{
   height: 35vh;
-    margin-left: 10px;
-    position: relative;
-}
-im h1{
+  width: 25vb;
+   margin-left: 10px;
   position: relative;
-  z-index: 99;
 }
+
 .im img:hover{
     transform: scale(1.1);
     transition: all 0.7s ease;
     cursor: pointer;
     opacity: 99;
 }
-.mainbody{
-    position: relative;
-    width: 100%;
-    top: -100px;
-    margin-bottom: 20px;
-}
+
 
 
 .container {

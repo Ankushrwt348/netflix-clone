@@ -11,29 +11,29 @@ const options = {
 
 
 
-fetch(url, options)
-    .then(response => { return response.json() })
-    .then(apiResponse => {
-        let data = apiResponse.movies;
-        console.log(data);
-        for (let i = 1; i < 11; i++) {
-            let im = document.querySelector(`#im${i}`);
-            const images = im.querySelectorAll('img');
-            console.log(images);
-            images.forEach((images, index) => {
-                images.src = data[index].image;
-                // data.forEach((data, i) => {
-                //     images[index].src = data.image;
-                // });
-            });
-
-
-
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+// fetch(url, options)
+//     .then(response => { return response.json() })
+//     .then(apiResponse => {
+//         let data = apiResponse.movies;
+//         console.log(data);
+//         let index = 0;
+//         for (let i = 1; i < 11; i++) {
+//             let im = document.querySelector(`#im${i}`);
+//             if (im) { 
+//                 const images = im.querySelectorAll('img');
+//                 console.log(images);
+//                 let j = 0;
+//                 while (j < images.length && index < data.length) {
+//                     images[j].src = data[index].image;
+//                     index++;
+//                     j++;
+//                 }
+//             }
+//         }
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
 
 
 
